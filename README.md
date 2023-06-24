@@ -18,18 +18,29 @@ THose that have logged in can add and a profile but only the perosn that added t
 
     You may also want to start a new branch
     ```sh
-    cd my-fullstack-collection
-    npm i
+    cd into sphink2023
+   run - <code> npm i</code>
     git checkout -b <branchname>
-    npm run dev
-    ```
+   
+    <!-- ```
   </details>
 
 <details>
   <summary>More about using <code>npm</code> vs <code>npx</code></summary>
+ -->
 
+
+run - <code> npm install knex sqlite3</code>
+run - <code> npm run knex migrate:make <table-name> </code>
+run - <code> npm run knex seed:make <table-name></code>
+
+run - <code>npm run dev </code>
+
+
+
+<!-- 
   - When running knex, run `npm run knex <command>`, e.g. `npm run knex migrate:latest` rather than using `npx`
-</details>
+</details> -->
 
 ---
 
@@ -37,7 +48,7 @@ THose that have logged in can add and a profile but only the perosn that added t
 
 ### 1. Choosing your data set
 
-- [ ] First, decide what you would like to keep a collection of. This could be a repo for keeping track of movies, books, gifs, cars, rocks, anything you fancy, but keep it simple!
+<!-- - [ ] First, decide what you would like to keep a collection of. This could be a repo for keeping track of movies, books, gifs, cars, rocks, anything you fancy, but keep it simple!
   <details style="padding-left: 2em">
     <summary>More about your collection</summary>
 
@@ -46,7 +57,10 @@ THose that have logged in can add and a profile but only the perosn that added t
     |id|title|author|
     |---|---|---|
     | 1 | Ready Player One | Ernest Cline |
-    | 2 | Throwing Rocks at the Google Bus | Douglas Rushkoff |
+    | 2 | Throwing Rocks at the Google Bus | Douglas Rushkoff | -->
+
+
+
 
 Our first job is getting something showing on the front end from our database. Here's a list of steps in case they are useful. You can build in any order you like though ;)
 
@@ -57,6 +71,9 @@ Our first job is getting something showing on the front end from our database. H
 - [ ] Design a database to store a list of your things (e.g. books)
 - [ ] Build the migrations and seed data
 
+Once you populate the database: run-
+    `npm run knex migrate:latest` 
+    `npm run knex seed:run` 
 ### 3. Building the API
 - [ ] Build an API (back end route) to get the information from your database
 - [ ] Test your API with Insomnia
