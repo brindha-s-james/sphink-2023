@@ -2,37 +2,36 @@
  * @param { import("knex").Knex } knex
  * @returns { Promise<void> }
  */
-export async function seed (knex) {
+exports.seed = async function seed(knex) {
   await knex('kids').del()
   await knex('kids').insert([
     {
       id: 1,
-      name: 'Leela James',
-      photo: 'images/leela.jpeg',
+      name: 'Leela',
+      photo: 'leela.jpeg',
       age: '9',
       description: 'kind, considerate, quiet, determined, crafty',
     },
     {
       id: 2,
-      name: 'Lennox James',
-      photo: 'images/lennox.jpeg',
+      name: 'Lennox',
+      photo: 'lennox.jpeg',
       age: '7',
       description: 'Funny, charming, confident, considerate, sporty',
     },
     {
       id: 3,
-      name: 'Anouka Rai',
-      photo: 'images/anouka.jpeg',
+      name: 'Anouks',
+      photo: 'anouka.jpeg',
       age: '7',
       description: 'helpful, crafty, chatty, thoughtful',
     },
     {
       id: 4,
-      name: 'Ishan Rai',
-      photo: 'images/ishan.jpeg',
+      name: 'Ish',
+      photo: 'ishan.jpeg',
       age: '8',
       description: 'thoughtful, sporty, strong, adventurous',
     },
   ])
 }
-
