@@ -74,15 +74,34 @@ Our first job is getting something showing on the front end from our database. H
 Once you populate the database: run-
     `npm run knex migrate:latest` 
     `npm run knex seed:run` 
+
+    
 ### 3. Building the API
 - [ ] Build an API (back end route) to get the information from your database
-- [ ] Test your API with Insomnia
+- [ ] create db.ts in db
+- [ ] import- import connection from "./connection"
+- [ ] const db = connection
+- [ ] add function getAllKids
+
+- [ ] create models folder in route and add type.ts file with model in it for kids
+
+- [ ] create a route for kids.ts
+- [ ] import -import express from "express";
+              -import * as db from '../db/db'
+            -const router = express.Router()
+- [ ] add function to get array of kids information
+
+- [ ] in server/server.ts - add the API
+- [ ] run <code> npm run dev. </code>
+- [ ] Test your API 'GET' with Insomnia
 
 ## Front end
 
 ### 4. Setting the stage
 
 - [ ] Build a React component with static html
+    - render the app component on localhost:5173n to check if rendering.
+    - 
 - [ ] Build Redux reducer. Start with a hardcoded initial state
   <details style="padding-left: 2em">
     <summary>Tip</summary>
@@ -97,6 +116,7 @@ Once you populate the database: run-
 
 ### 5. Building the API client
 - [ ] Build an API client in the front end to request the information from your routes
+- [ ] start with the function to `fetchAllData`
 
 ### 6. Building thunky actions
 - [ ] Build Thunk actions to use the API and get the information
