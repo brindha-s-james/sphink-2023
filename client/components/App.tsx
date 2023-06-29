@@ -3,14 +3,14 @@ import { Kids, KidsData } from '../../models/types'
 import Kid from './kids'
 import { useAppDispatch } from '../hooks/hooks'
 import { useEffect } from 'react'
-import { getKidsThunk } from '../actions/kids'
+import { setKidsThunk } from '../actions/kids'
 import Header from './Header'
 import AddKidForm from './AddKidForm'
 
 function App() {
   const dispatch = useAppDispatch()
   useEffect(() => {
-    dispatch(getKidsThunk())
+    dispatch(setKidsThunk())
   }, [dispatch])
   return (
     <>
@@ -20,7 +20,7 @@ function App() {
       <section className="main">
         <Kid />
       </section>
-      <AddKidForm/>
+      <AddKidForm />
     </>
   )
 }

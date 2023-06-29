@@ -14,7 +14,8 @@ function KidForm() {
 
   const handleSubmit = (event: FormEvent) => {
     event.preventDefault()
-    dispatch(addKidThunk()) //do i need an argument?
+    dispatch(addKidThunk(formData)) 
+    // setFormData('')
   }
 
   return (
@@ -25,16 +26,16 @@ function KidForm() {
       {/* childs name */}
       <form onSubmit={handleSubmit}>
         <label htmlFor="name">Name:</label>
-        <input type="text" id="name" onChange={handleChange} />
+        <input type="text" id="name" name="name" onChange={handleChange} />
 
         {/* childs age */}
        <br /> <label htmlFor="age">Age:</label>
-        <input type="text" id="age" onChange={handleChange} />
+        <input type="number" id="age" name="age"onChange={handleChange} />
 
         {/* childs description */}
         <br />
         <label htmlFor="description">Details:</label>
-        <input type="text" id="description" onChange={handleChange} />
+        <input type="text" id="description" name="description"onChange={handleChange} />
 
         <button type="submit">SUBMIT</button>
       </form>

@@ -3,6 +3,7 @@ import path from 'path'
 import kids from './routes/kids'
 
 const server = express()
+
 server.use('/api/v1/kids', kids)
 server.use(express.json())
 
