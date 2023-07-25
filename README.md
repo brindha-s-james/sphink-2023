@@ -1,9 +1,10 @@
 # Fullstack Collection App
+THIS APP IS IN PROGRESS...
 
 This repo is designed to provide space to code a fullstack app. It contains node modules and folders for databases, routes, api requests, react components, and redux actions and creators. Let's get going!
 
-This is my personal project. The purpose of creating this is to show gratittude to the little people in my life and th epeople tat enrich my life, my friends. 
-The home page will have the name of the family, the purpose and inspiration then you clikc on each of the family name and it will take us to the childs profile with a picture, their age and a description or a quote of some of the funniest things they say!
+This is my personal project. The purpose of creating this is to show gratittude to the little people in my life and the people tat enrich my life, my friends. 
+The home page will have the name of each family and family moto then when you you click on each of the family name and it will take us to the childs profile with a picture, their age and a description or a quote of some of the funniest things they say!
 
 THose that have logged in can add and a profile but only the perosn that added the profile can edit and delete it. This is to try out authentication that we learnt briefly in week 7.
 
